@@ -23,7 +23,7 @@ client.connect(err => {
       console.log(products)
       collection.insertMany(products)
       .then(result =>{
-        console.log(result.insertedCount)
+        
         res.send(result.insertedCount > 0)
          
       })
